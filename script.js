@@ -4,7 +4,7 @@ const output = document.getElementById("output");
 function makePromise(name) {
   const delay = (Math.random() * 2 + 1); // 1 to 3 seconds
 
-  return new Promise((resolve) => {
+  return new Promise((resolve,rej) => {
     setTimeout(() => {
       resolve({ name, time: delay });
     }, delay * 1000);
